@@ -15,6 +15,10 @@
             <DataTemplate DataType="{x:Type viewModels:GalleryViewModel}">
                 <views:GalleryView/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:CreatorViewModel}">
+                <views:CreatorView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
