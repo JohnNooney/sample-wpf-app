@@ -20,18 +20,5 @@ namespace SampleApplication
         {
             InitializeComponent();
         }
-
-        private void onDisplayClick(object sender, RoutedEventArgs e)
-        {
-            if (HelloButton.IsChecked == true)
-            {
-                DisplayBlock.Text = "Hello World!";
-            }
-
-            if (GoodbyeButton.IsChecked == true)
-            {
-                DisplayBlock.Text = "Goodbye World!";
-            }
-        }
     }
 }
