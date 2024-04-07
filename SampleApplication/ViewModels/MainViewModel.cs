@@ -1,6 +1,7 @@
 ﻿using SampleApplication.Views;
 using System;
 using System.Collections.Generic;
+using System.DirectoryServices;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,11 +30,20 @@ namespace SampleApplication.ViewModels
 
         public MainViewModel()
         {
+            setViewModels();
+            setRelayCommands();
+
+            _currentView = GalleryViewModel;
+        }
+
+        private void setViewModels()
+        {
             GalleryViewModel = new GalleryViewModel();
             CreatorViewModel = new CreatorViewModel();
-            
-            _currentView = GalleryViewModel;
+        }
 
+        private void setRelayCommands() 
+        {
             GalleryViewCommand = new RelayCommand(o =>
             {
                 CurrentView = GalleryViewModel;
