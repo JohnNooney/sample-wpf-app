@@ -16,8 +16,6 @@ namespace SampleApplication.ViewModels
         public GalleryViewModel GalleryViewModel { get; set; }
         public CreatorViewModel CreatorViewModel { get; set; }
         
-        private object _currentView;
-
         public object CurrentView
         {
             get { return _currentView; }
@@ -27,6 +25,8 @@ namespace SampleApplication.ViewModels
                 OnPropertyChanged(); 
             }
         }
+        
+        private object _currentView;
 
         public MainViewModel()
         {
