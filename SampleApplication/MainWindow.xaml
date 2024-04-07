@@ -5,12 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SampleApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Select a message option" VerticalAlignment="Top" TextAlignment="Center" Margin="0,20,0,0"/>
-        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="150,120,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Right" Margin="0,120,150,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="DisplayBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" TextAlignment="Center" Margin="0,0,0,200"/>
-        <Button Content="Display" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Click="onDisplayClick"/>
-    </Grid>
+        Title="MainWindow" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#272537" CornerRadius="20">
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            
+            <TextBlock Text="Shapes App"
+                       FontSize="22"
+                       Foreground="White"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Left"
+                       Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Gallery"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"/>
+            </StackPanel>
+            
+                
+           
+        </Grid>
+
+    </Border>
+    
 </Window>
