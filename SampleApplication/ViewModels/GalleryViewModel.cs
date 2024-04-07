@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleApplication.ViewModels
 {
-    internal class GalleryViewModel : ViewModelBase
+    internal class GalleryViewModel : BaseViewModel
     {
         public GalleryViewModel() 
         { 

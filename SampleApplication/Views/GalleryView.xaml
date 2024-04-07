@@ -1,15 +1,34 @@
-﻿<Window x:Class="SampleApplication.Views.GalleryView"
+﻿<UserControl x:Class="SampleApplication.Views.GalleryView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SampleApplication.Views"
         mc:Ignorable="d"
-        d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.ColumnDefinitions/>
-        <Grid.RowDefinitions/>
+        d:DesignHeight="450" d:DesignWidth="800"
+        Background="Transparent">
 
-        <TextBox Text="Hello Gallery"/>
-    </Grid>
-</Window>
+    <Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Background="SlateBlue"  
+                    CornerRadius="20">
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="20"
+                           Margin="10"
+                           Foreground="White"
+                           Text="Browse the Gallery!"/>
+            </Border>
+            
+        </Grid>
+    </Border>
+    
+</UserControl>

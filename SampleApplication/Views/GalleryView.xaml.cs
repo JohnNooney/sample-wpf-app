@@ -14,10 +14,7 @@ using System.Windows.Shapes;
 
 namespace SampleApplication.Views
 {
-    /// <summary>
-    /// Interaction logic for GalleryView.xaml
-    /// </summary>
-    public partial class GalleryView : Window
+    public partial class GalleryView : UserControl
     {
         public GalleryView()
         {
