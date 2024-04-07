@@ -17,13 +17,19 @@
         </Grid.RowDefinitions>
 
         <Border Background="SlateBlue"  
-        CornerRadius="20">
+                CornerRadius="20">
             <TextBlock HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontSize="20"
                 Margin="10"
                 Foreground="White"
                 Text="Create a Shape!"/>
+        </Border>
+
+        <Border Background="DarkSlateBlue"
+                Grid.Row="1"
+                CornerRadius="10"
+                Margin="0,10, 0, 0">
         </Border>
 
     </Grid>

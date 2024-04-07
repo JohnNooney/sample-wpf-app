@@ -27,7 +27,13 @@
                            Foreground="White"
                            Text="Browse the Gallery!"/>
             </Border>
-            
+
+            <Border Background="DarkSlateBlue"
+                    Grid.Row="1"
+                    CornerRadius="10"
+                    Margin="0,10, 0, 0">
+            </Border>
+
         </Grid>
     </Border>
     
